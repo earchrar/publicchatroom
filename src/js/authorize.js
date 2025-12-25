@@ -19,6 +19,9 @@ export function Authorize(){
                 displayName: fullname, 
                 photoURL: defaultprofileimg
             }).then(() => {
+
+                setLocalName(user);
+
                 // Redirect to index.html 
                 window.location.href = "../index.html";
             });
@@ -100,9 +103,9 @@ export function Authorize(){
         signInWithPopup(auth, provider)
         .then((result) => {
 
-            console.log(result.user);
+            // console.log(result.user);
 
-            setLocalName(result.user.displayName);
+            setLocalName(result.user);
 
             // Redirect to index.html 
             window.location.href = "../index.html";

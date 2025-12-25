@@ -122,7 +122,23 @@ Authentication > Template > Password reset > click Edit pen
 
 1. Your project need Repo public/private to Github
 
-2. 
+2. signin your account to https://render.com/
+
+3. Prepare the build output 
+    your project must builded and typically located in the "dist" directory 
+
+4. Create a new static site 
+    click > "New +" > Static Site > Github > your account > choose repo > click "Connect"
+
+5.  Name : publicchatroom
+    ProjectOptional: 
+    Branch: master
+    Build Command: npm run build ( React , Vue , etc...) , ng build ( Angular )
+    Publish Directory 
+
+6. Environment Variables = copy paste .env data to Environment Variables
+
+https://publicroom.onrender.com/
     
 
 
